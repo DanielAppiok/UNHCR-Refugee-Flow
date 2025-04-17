@@ -11,8 +11,11 @@ Assist in faster triage or profiling of cases based on historical data.
 
 Explore the feasibility of deploying a real-world predictive tool for humanitarian insights.
 
-Model | Accuracy | Macro F1 | Notes
-Random Forest (tuned) | 0.9717 | 0.66 | Best overall performance
-SVM (RBF) | 0.9717 | 0.47 | Great on ASY, poor on others
-KNN | 0.9647 | 0.57 | Balanced but weaker on rare classes
-Logistic Regression | 0.9553 | 0.50 | Limited multiclass capacity
+## Results Snapshot
+Random Forest (Tuned) achieved the best accuracy at 97.17%, with strong overall performance across classes, particularly the dominant class (ASY). Performance on minority classes (REF, ROC, OIP) was modest but acceptable considering the imbalance.
+
+SVM with RBF kernel also reached 97.17% accuracy, but performed poorly on minority classes like ROC and OIP, despite strong results on ASY.
+
+K-Nearest Neighbors (KNN) recorded an accuracy of 96.47% and offered relatively better balance between classes, but still lagged behind Random Forest in overall macro F1-score.
+
+Logistic Regression came in with an accuracy of 95.53%, showing limited capability in capturing the nuances of the minority classes, especially REF and ROC.
